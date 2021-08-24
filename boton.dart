@@ -19,12 +19,12 @@ class _CounterState extends State<Counter> {
     setState(() {
       if(botonIF == "Iniciar"){
         botonIF = "Detener";
-        titulo="Detener";
+        titulo="Detener Proceso";
         colorBotonIF = Colors.red;
         val++;
       }else{
         botonIF = "Iniciar";
-        titulo="Iniciar";
+        titulo="Iniciar Proceso";
         colorBotonIF = Colors.green;
         val=val+2;
       }
