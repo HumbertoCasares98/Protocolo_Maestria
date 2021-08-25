@@ -11,10 +11,7 @@ class _CounterState extends State<Counter> {
   Color colorBotonIF = Colors.green;
   bool _isPaused;
   
-   while (_isPaused) {
-        await Future.delayed(Duration(milliseconds: 500));
-      }
-      
+   
   void change() {
     setState(() {
       if(botonIF == "Iniciar"){
@@ -34,6 +31,13 @@ class _CounterState extends State<Counter> {
     });
   }
 
+  void proceso(){
+	  while (_isPaused) {
+		await Future.delayed(Duration(milliseconds: 500));
+	      }
+	      
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
